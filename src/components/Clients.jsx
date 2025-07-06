@@ -9,10 +9,10 @@ const Clients = () => {
             </div>
             <div className="mt-10">
             <div className="hero shadow-sm ">
-  <div className="hero-content flex-col lg:flex-row">
+  <div className="hero-content flex-col md:flex-row">
     <img
       src={img1}
-      className="max-w-sm rounded-lg shadow-2xl " />
+      className=" w-[370px] rounded-lg shadow-2xl " />
     {/**According */}
     <div>
     <div className="collapse collapse-plus bg-base-100 border border-base-300">
