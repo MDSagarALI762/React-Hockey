@@ -11,33 +11,38 @@ const Navbar = () => {
       </div>
       <ul
         tabIndex={0}
-        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-         <li><a>Home</a></li>
-      <li><a>About</a>
+        className="menu menu-sm dropdown-content text-[16px] font-semibold
+        bg-base-100 rounded-box z-1 mt-3 h-80 space-y-2 w-[375px] p-2 shadow">
+         <li><a className="text-[16px] font-semibold">Home</a></li>
+      <li><a className="text-[16px] font-semibold">About</a>
       </li>
-      <li><a>Page</a></li>
-      <li><a>Blog</a></li>
-      <li><a>Contact</a></li>
+      <li><a className="text-[16px] font-semibold">Page</a></li>
+      <li><a className="text-[16px] font-semibold">Blog</a></li>
+      <li><a className="text-[16px] font-semibold">Contact</a></li>
       </ul>
     </div>
-    <a className="btn btn-ghost text-2xl font-bold">Hockey's</a>
+    <a className="text-xl md:text-4xl font-bold">Hockey's</a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
-      <li><a>Home</a></li>
-      <li><a>About</a>
+      <li><a className="text-[20px] font-semibold">Home</a></li>
+      <li><a className="text-[20px] font-semibold">About</a>
       </li>
-      <li><a>Page</a></li>
-      <li><a>Blog</a></li>
-      <li><a>Contact</a></li>
+      <li><a className="text-[20px] font-semibold">Page</a></li>
+      <li><a className="text-[20px] font-semibold">Blog</a></li>
+      <li><a className="text-[20px] font-semibold">Contact</a></li>
     </ul>
   </div>
-  <div className="navbar-end flex gap-2">
-    <div className="relative flex items-center">
-    <input type="text" className=""/>
-    <CiSearch className="absolute ml-[150px] text-2xl"></CiSearch>
+  <div className="navbar-end flex gap-2 md:gap-6">
+    <div  className="relative flex items-center">
+    <input type="text" className="w-20 md:w-50"/>
+    <CiSearch className="absolute right-0 ml-[150px] text-2xl text-gray-500 cursor-pointer
+    "></CiSearch>
     </div>
-    <a className="btn bg-[#FF4240] text-white">Get Ticket</a>
+    <button className="btn flex bg-[#FF4240] font-semibold rounded
+     md:py-2 
+    md:px-5 md:text-[20px] text-white">
+      Get Ticket</button>
   </div>
 </div>
     );

@@ -2,7 +2,7 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa6';
 import banner from '../assets/images/banner.png';
 import roundedImg1 from '../assets/images/4267cbc5-7a0b-4561-adf1-4c7b566f07bb (1).jpeg';
 import roundedImg2 from '../assets/images/f3ef8cfa-2ae8-4f15-9033-aeb98788279c (1).png';
-
+import './Banner.css'
 const Banner = () => {
   return (
     <div className="w-11/12   mx-auto mt-8">
@@ -24,20 +24,30 @@ const Banner = () => {
               </a>
             </div>
 
-            {/* Avatars */}
-            <div className="bg-white rounded-full p-2 flex items-center -space-x-2 shadow-lg">
-              <img src={roundedImg1} alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-white" />
-              <div className="w-10 h-10 bg-purple-500 text-white flex items-center justify-center rounded-full text-2xl font-bold border-2 border-white">
-                Y
-              </div>
-              <img src={roundedImg2} alt="Avatar 2" className="w-10 h-10 rounded-full border-2 border-white" />
-              <div className="w-10 h-10 bg-pink-500 text-white flex items-center justify-center rounded-full text-2xl font-bold border-2 border-white">
-                M
-              </div>
-              <div className="w-10 h-10 bg-gray-500 text-white flex items-center justify-center rounded-full text-2xl font-bold border-2 border-white">
-                M
-              </div>
-            </div>
+             <div className="relative w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center">
+  {/* Circle items */}
+  <div className="absolute w-10 h-10 bg-purple-500 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white" style={{ top: '10%', left: '50%', transform: 'translateX(-50%)' }}>
+    Y
+  </div>
+
+  <div className="absolute w-10 h-10 rounded-full border-2 border-white" style={{ top: '30%', left: '20%' }}>
+    <img src={roundedImg1} alt="Avatar 1" className="w-full h-full object-cover rounded-full" />
+  </div>
+
+  <div className="absolute w-10 h-10 bg-pink-500 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white" style={{ bottom: '15%', left: '20%' }}>
+    M
+  </div>
+
+  <div className="absolute w-10 h-10 rounded-full border-2 border-white" style={{ top: '30%', right: '20%' }}>
+    <img src={roundedImg2} alt="Avatar 2" className="w-full h-full object-cover rounded-full" />
+  </div>
+
+  <div className="absolute w-10 h-10 bg-gray-500 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white" style={{ bottom: '15%', right: '20%' }}>
+    M
+  </div>
+</div>
+
+            
           </div>
 
           {/* Text Box */}
@@ -64,19 +74,29 @@ const Banner = () => {
               </a>
             </div>
 
-            <div className="bg-white rounded-full p-2 flex items-center -space-x-2 shadow-lg">
-              <img src={roundedImg1} alt="Avatar 1" className="w-10 h-10 rounded-full border-2 border-white" />
-              <div className="w-10 h-10 bg-purple-500 text-white flex items-center justify-center rounded-full text-2xl font-bold border-2 border-white">
-                Y
-              </div>
-              <img src={roundedImg2} alt="Avatar 2" className="w-10 h-10 rounded-full border-2 border-white" />
-              <div className="w-10 h-10 bg-pink-500 text-white flex items-center justify-center rounded-full text-2xl font-bold border-2 border-white">
-                M
-              </div>
-              <div className="w-10 h-10 bg-gray-500 text-white flex items-center justify-center rounded-full text-2xl font-bold border-2 border-white">
-                M
-              </div>
-            </div>
+            <div className="relative w-32 h-32 rounded-full bg-white shadow-lg flex items-center justify-center">
+  {/* Circle items */}
+  <div className="absolute w-10 h-10 bg-purple-500 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white" style={{ top: '10%', left: '50%', transform: 'translateX(-50%)' }}>
+    Y
+  </div>
+
+  <div className="absolute w-10 h-10 rounded-full border-2 border-white" style={{ top: '30%', left: '20%' }}>
+    <img src={roundedImg1} alt="Avatar 1" className="w-full h-full object-cover rounded-full" />
+  </div>
+
+  <div className="absolute w-10 h-10 bg-pink-500 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white" style={{ bottom: '15%', left: '20%' }}>
+    M
+  </div>
+
+  <div className="absolute w-10 h-10 rounded-full border-2 border-white" style={{ top: '30%', right: '20%' }}>
+    <img src={roundedImg2} alt="Avatar 2" className="w-full h-full object-cover rounded-full" />
+  </div>
+
+  <div className="absolute w-10 h-10 bg-gray-500 text-white flex items-center justify-center rounded-full text-sm font-bold border-2 border-white" style={{ bottom: '15%', right: '20%' }}>
+    M
+  </div>
+</div>
+
           </div>
 
           {/* Text Box */}
